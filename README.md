@@ -1,5 +1,5 @@
 # vvTPFinal_Integrador_Grupo5
 
-Trabajo integradol grupal
+Trabajo integrador grupal
 
 - Tema: Feria Sustentable
