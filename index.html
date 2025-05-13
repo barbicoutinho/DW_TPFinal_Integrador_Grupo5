@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alma Verde</title>
     <link rel="icon" type="image/png" href="./media/icono.svg">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Alma Verde</h1>
         <img src="./media/icono.svg" alt="Logo de Alma Verde" width="200" height="200">
     </header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/avances.html">Avances</a></li>
-            <li><a href="./pages/proyecto.html">Proyecto</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <!-- Contenedor de logo y botón menú hamburguesa -->
+            <div class="mi-logo">
+                <div class="mi-icono-inicio">
+                    <a href="./index.html">
+                        <img src="./media/icono.svg" alt="alma verde" id="alma-verde-icon">
+                    </a>
+                </div>
+
+                <!-- Botón hamburguesa que aparece en pantallas chicas -->
+                <div class="mi-hamburguesa">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menú de navegación que se oculta en pantallas chicas y se despliega -->
+            <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
+                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="./pages/avisos.html">Avisos</a>
+                <a class="nav-link" href="./pages/sobremi.html">Sobre mí</a>
+                <a class="nav-link" href="./pages/materias2025.html">Materias 2025</a>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </div>
+        </div>
     </nav>
+
     <main>
         <section>
             <ul>
@@ -39,5 +69,8 @@
     <footer>
         <p>&copy; 2025 Alma Verde. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

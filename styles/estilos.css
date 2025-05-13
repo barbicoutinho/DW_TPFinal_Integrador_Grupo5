@@ -1,0 +1,45 @@
+* {
+  /* Reinicio general: elimina márgenes y paddings por defecto, y ajusta el modelo de caja */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* Asegura que ocupen el 100% de la altura de la ventana */
+  height: 100%;
+}
+
+body {
+  /* Fuente por defecto */
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column; /* Estructura vertical para usar el footer abajo */
+}
+
+main {
+  flex: auto; /* El main ocupa todo el espacio disponible entre header y footer */
+}
+
+/* Tamaños de fuente para distintos encabezados */
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1em;
+}
+
+ul {
+  list-style: none; /* Elimina los puntos de las listas */
+}
+
+a {
+  text-decoration: none !important; /* Quita el subrayado de los links */
+}
