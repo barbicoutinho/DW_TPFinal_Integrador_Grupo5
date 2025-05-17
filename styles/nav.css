@@ -1,5 +1,4 @@
 nav {
-  background-color: rgb(255, 255, 255) !important; /* Fondo blanco para el nav */
   width: 100%;
 }
 
@@ -17,14 +16,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 50px; /* Espaciado a la izquierda del ícono */
+  width: 20%;
 }
 
 .mi-icono-inicio span {
-  display: flex;
+  font-family: 'Pacifico', cursive;      /* Fuente orgánica */
+  color: rgb(28, 83, 2);
   font-size: 2rem;
+  white-space: nowrap;                   /* No permitir que divida “Alma” y “Verde” */
+  margin-left: 0.5rem;                   /* Pequeño espacio desde el icono */
   align-items: center;
-  margin-bottom: 1%;
+  display: inline-flex;
 }
 
 /* Oculta el span (texto) cuando el ancho de pantalla es menor a 530px */
@@ -36,13 +38,10 @@ nav {
 
 #alma-verde-icon {
   border-radius: 16px; /* Bordes redondeados para el ícono */
-  width: 15%; /* Escala del ícono dentro del contenedor */
+  width: 50%; /* Escala del ícono dentro del contenedor */
 }
 
-.label_logo {
-  background-color: #0a71a6;
-  text-transform: uppercase; /* Convierte el texto en mayúsculas */
-}
+
 
 .mi-nav-bar {
   display: flex;
