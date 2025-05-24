@@ -4,104 +4,98 @@ nav {
 
 .container-fluid {
   display: flex;
-  justify-content: space-between; /* Espaciado entre logo y enlaces */
+  justify-content: space-between;
+  /* Espaciado entre logo y enlaces */
 }
 
-.mi-icono-inicio {
+.mi-logo {
   display: flex;
-  justify-content: center; /* Centra el ícono dentro del contenedor */
+  justify-content: center;
+  /* Centra el ícono dentro del contenedor */
+  flex: content;
 }
 
-.mi-icono-inicio a {
+.mi-logo a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
 }
 
-.mi-icono-inicio span {
-  font-family: 'Pacifico', cursive;      /* Fuente orgánica */
+.mi-logo span {
+  font-family: 'Pacifico', cursive;
+  /* Fuente orgánica */
   color: rgb(28, 83, 2);
   font-size: 2rem;
-  white-space: nowrap;                   /* No permitir que divida “Alma” y “Verde” */
-  margin-left: 0.5rem;                   /* Pequeño espacio desde el icono */
+  white-space: nowrap;
+  /* No permitir que divida “Alma” y “Verde” */
+  margin-left: 0.5rem;
+  /* Pequeño espacio desde el icono */
   align-items: center;
   display: inline-flex;
 }
 
 /* Oculta el span (texto) cuando el ancho de pantalla es menor a 530px */
 @media screen and (max-width: 530px) {
-  .mi-icono-inicio span {
+  #alma-verde-icon {
     display: none;
   }
 }
 
 #alma-verde-icon {
-  border-radius: 16px; /* Bordes redondeados para el ícono */
-  width: 50%; /* Escala del ícono dentro del contenedor */
+  width: 5rem;
+  padding: auto;
 }
 
 
 
 .mi-nav-bar {
   display: flex;
-  margin-left: 200px; /* Espacio a la izquierda de la barra de navegación */
+  margin-left: 200px;
+  /* Espacio a la izquierda de la barra de navegación */
 }
 
 .mi-nav-bar a {
   display: flex !important;
-  color: rgb(0, 0, 0); /* Color negro para los links */
+  color: rgb(0, 0, 0);
+  /* Color negro para los links */
   padding: 10px;
-  font-size: 1.9rem; /* Tamaño grande de letra */
+  font-size: 1.9rem;
+  /* Tamaño grande de letra */
 }
 
 .navbar-collapse {
-  justify-content: space-evenly !important; /* Espaciado uniforme entre los elementos del navbar */
+  justify-content: space-evenly !important;
+  /* Espaciado uniforme entre los elementos del navbar */
 }
 
 .mi-nav-bar a:hover,
 #uade-icon:hover {
-  transform: scale(1.4); /* Agranda los elementos al pasar el mouse */
+  transform: scale(1.4);
+  /* Agranda los elementos al pasar el mouse */
 }
 
-/* Ajustes de margen y fuente cuando la pantalla es menor a 1450px */
-@media screen and (max-width: 1450px) {
-  .mi-nav-bar {
-    margin-left: 50px;
-  }
-  .mi-nav-link {
-    font-size: 0.8rem;
-  }
-}
-
-/* Ajustes adicionales para pantallas menores a 1237px */
-@media screen and (max-width: 1237px) {
-  .mi-nav-bar {
-    margin-left: 0px;
-  }
-  .mi-nav-link {
-    font-size: 0.4rem;
-  }
-}
 
 /* Reestructuración del navbar para pantallas chicas (modo móvil) */
 @media screen and (max-width: 1199px) {
   .mi-logo {
     width: 100%;
-  }
-  .mi-icono-inicio a {
     padding: 0;
   }
+
   .mi-nav-bar {
     width: 100% !important;
-    flex-direction: column !important; /* Enlaces uno abajo del otro */
+    flex-direction: column !important;
+    /* Enlaces uno abajo del otro */
     justify-content: flex-end !important;
     align-items: flex-end !important;
   }
+
   .mi-hamburguesa {
     position: fixed;
     top: 1%;
-    right: 20px; /* Ubica el botón de hamburguesa en la esquina superior derecha */
+    right: 20px;
+    /* Ubica el botón de hamburguesa en la esquina superior derecha */
   }
 }
 

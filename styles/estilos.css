@@ -43,3 +43,10 @@ ul {
 a {
   text-decoration: none !important; /* Quita el subrayado de los links */
 }
+
+.icon {
+  /* Estilo para iconos */
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5em;
+}
