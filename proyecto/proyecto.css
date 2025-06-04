@@ -2,56 +2,97 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 2.05rem;
+  line-height: 1.6;
 }
 
+/* NAVBAR */
 .navbar-brand span {
-  font-size: 1.1rem;
+  font-family: 'Pacifico', cursive;
+  color: rgb(231, 230, 230);
+  font-size: 2rem;
+  white-space: nowrap;
 }
 
 .navbar-nav .nav-link {
   color: #fff !important;
   margin-left: 15px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
-/* HERO SECTION */
-.hero {
-  background-image: url('../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  padding: 2rem 0;
+/* NAVBAR efecto vidrio */
+.glass-navbar {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.hero h2 {
-  font-size: 2rem;
+/* HERO */
+.hero {
+  background: url('../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg') center/cover no-repeat;
+  position: relative;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  text-align: end;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
   line-height: 1.3;
+  color: #fff;
+}
+
+.btn-ver-stands {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #3a88e2;
+  background-color: #453adb;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-ver-stands:hover {
+  background-color: white;
+  color: #0630ec;
+  border-color: white;
 }
 
 /* SECCIÓN ¿QUÉ ES NUESTRA FERIA? */
 .seccion-titulo {
   font-weight: 600;
+  font-size: 3.0rem;
 }
+
+.lead {
+  font-size: 2rem;
+}
+
 
 /* PRÓXIMAS FECHAS */
 .bg-fechas {
   background-color: #eef7df;
-}
-
-/* RESPONSIVE */
-@media (max-width: 576px) {
-  .hero {
-    height: 250px;
-    text-align: center;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .navbar-nav .nav-link {
-    margin-left: 0;
-  }
 }
 
 /* MAPA */
@@ -62,5 +103,41 @@ body {
 
 /* FOOTER */
 footer {
-  font-size: 0.9rem;
+  font-size: 3.5rem;
+  padding: 2rem 0;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-custom {
+  font-size: 2rem;
+  padding: 2.5rem 0;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .hero {
+    height: 300px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .btn-ver-stands {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+  }
 }
