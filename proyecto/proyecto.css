@@ -33,7 +33,7 @@ body {
 .hero {
   background: url('../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg') center/cover no-repeat;
   position: relative;
-  height: 550px;
+  height: 650px;
   display: flex;
   align-items: center;
 }
@@ -89,7 +89,6 @@ body {
   font-size: 2rem;
 }
 
-
 /* PRÓXIMAS FECHAS */
 .bg-fechas {
   background-color: #eef7df;
@@ -118,8 +117,38 @@ footer {
   text-align: center;
 }
 
-/* RESPONSIVE */
+/* NAVBAR – botón hamburguesa visible */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* RESPONSIVE navbar collapse + ajustes mobile */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 0;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
+
   .hero {
     height: 300px;
     text-align: center;
@@ -135,9 +164,43 @@ footer {
     padding: 10px 20px;
     display: inline-block;
     text-align: center;
+    margin: 0 auto;
   }
 
   .navbar-nav .nav-link {
     margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .seccion-titulo {
+    font-size: 1.4rem;
+  }
+
+  .lead, p, span, strong {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+  /* ✅ Centrar "Alma Verde" y ocultar ícono */
+  .navbar-brand {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+
+  .navbar-brand span {
+    font-size: 2rem;
+    margin-left: 3rem;
+    text-align: center;
+    display: block;
+    width: 100%;
   }
 }
