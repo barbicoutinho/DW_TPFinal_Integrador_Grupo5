@@ -157,6 +157,7 @@ footer {
   .hero-content h2 {
     font-size: 1.6rem;
     text-align: center;
+    margin-top: 50px;
   }
 
   .btn-ver-stands {
@@ -175,6 +176,7 @@ footer {
   .seccion-titulo {
     font-size: 1.4rem;
   }
+
 
   .lead, p, span, strong {
     font-size: 1rem;
