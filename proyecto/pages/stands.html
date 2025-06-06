@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <title>Alma verde - Stands</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stands.css">
     <link rel="stylesheet" href="../proyecto.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <nav class="navbar navbar-expand-lg glass-navbar fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="../proyecto.html">
                 <img src="../../media/icono.svg" alt="Alma Verde" width="50" class="me-2">
@@ -28,8 +31,154 @@
                     <li class="nav-item"><a class="nav-link" href="./promociones.html">Promociones</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
+                <div id="themeToggle" style="cursor: pointer;">
+                    <img id="icon-luna" src="../../media/luna color.png" alt="Modo oscuro" width="35" height="35">
+                    <img id="icon-sol" src="../../media/sol brillante.png" alt="Modo claro" width="35" height="35"
+                        style="display: none;">
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- HERO -->
+    <section class="hero d-flex justify-content-center align-items-center text-center" id="hero-stand">
+        <div class="container">
+            <div class="hero-content text-white">
+                <h2 class="fw-bold display-1 ">NUESTROS STANDS</h2>
+                <p class="lead subtitulo-hero-stands fs-1">
+                    <strong>En nuestra feria contamos con diversas propuestas para que descubras,<br>
+                        aprendas y te inspires en torno a la sustentabilidad.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CERO DESPERDICIO -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- Imagen izquierda -->
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="../../media/stands/1.webp" class="img-fluid rounded shadow-sm img-stand"
+                        style="max-height: 550px;" alt="Cero Desperdicio">
+                </div>
+                <!-- Texto derecha -->
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <h2 class="fw-bold text-dark-emphasis display-5 mb-4">Cero Desperdicio</h2>
+                    <p class="text-dark-emphasis" style="font-size: 2.0rem; line-height: 1.6;">
+                        Artículos reutilizables para el hogar: bolsas de tela, fiambreras de acero, botellas de vidrio y
+                        envoltorios de cera de abeja. Todo pensado para reducir plásticos de un solo uso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- BELLEZA NATURAL -->
+    <section class="py-5" style="background-color: #d9e7c9;">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- TEXTO a la izquierda -->
+                <div
+                    class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-md-start align-items-center text-center text-md-start mb-4 mb-md-0">
+                    <h2 class="fw-bold text-dark-emphasis display-5 mb-4 text-center text-md-start w-100">Belleza
+                        Natural</h2>
+                    <p class="text-dark-emphasis text-center text-md-start w-100"
+                        style="font-size: 2.0rem; line-height: 1.6;">
+                        Cosmética y cuidado personal eco-amigable: jabones artesanales, shampoo sólido, desodorantes en
+                        barra y
+                        aceites esenciales veganos. Ingredientes naturales certificados y envases compostables.
+                    </p>
+                </div>
+                <!-- IMAGEN a la derecha -->
+                <div class="col-12 col-md-6 text-center">
+                    <img src="../../media/stands/2.webp" class="img-fluid rounded shadow-sm img-stand"
+                        style="max-height: 550px;" alt="Belleza Natural">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISEÑO RECICLADO -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- Imagen izquierda -->
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="../../media/stands/3.webp" class="img-fluid rounded shadow-sm img-stand"
+                        style="max-height: 550px;" alt="Diseño Reciclado">
+                </div>
+                <!-- Texto derecha -->
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <h2 class="fw-bold text-dark-emphasis display-5 mb-4">Diseño Reciclado</h2>
+                    <p class="text-dark-emphasis" style="font-size: 2.0rem; line-height: 1.6;">
+                        Accesorios y decoración hechos con materiales reciclados: carteras de jean reaprovechado,
+                        portamacetas de latas decoradas, lámparas de papel reutilizado y bijouterie sostenible.
+                        Piezas únicas y producción local.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENERGÍA Y LUZ VERDE -->
+    <section class="py-5" style="background-color: #d9e7c9;">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- Texto izquierda -->
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h2 class="fw-bold text-dark-emphasis display-5 mb-4">Energía y Luz Verde</h2>
+                    <p class="text-dark-emphasis" style="font-size: 2.0rem; line-height: 1.6;">
+                        Pequeños paneles solares portátiles, lámparas LED de bajo consumo y cargadores solares
+                        para dispositivos móviles. Demostraciones de uso y asesoría para integrar energía
+                        renovable en el hogar.
+                    </p>
+                </div>
+                <!-- Imagen derecha -->
+                <div class="col-12 col-md-6 text-center">
+                    <img src="../../media/stands/4.webp" class="img-fluid rounded shadow-sm img-stand"
+                        style="max-height: 550px;" alt="Energía y Luz Verde">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HUERTA EN CASA -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- Imagen izquierda -->
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="../../media/stands/5.webp" class="img-fluid rounded shadow-sm img-stand"
+                        style="max-height: 550px;" alt="Huerta en Casa">
+                </div>
+                <!-- Texto derecha -->
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <h2 class="fw-bold text-dark-emphasis display-5 mb-4">Huerta en Casa</h2>
+                    <p class="text-dark-emphasis" style="font-size: 2.0rem; line-height: 1.6;">
+                        Venta de hortalizas orgánicas, hierbas aromáticas en maceta y kits de siembra
+                        (semillas, tierra y macetas biodegradables). Productos cultivados localmente sin
+                        agroquímicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="text-center text-white bg-dark footer-custom">
+        <p class="mb-0">© 2025 Alma Verde, Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../proyecto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 2.05rem;
@@ -8,7 +8,7 @@ body {
 
 /* NAVBAR */
 .navbar-brand span {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: rgb(231, 230, 230);
   font-size: 2rem;
   white-space: nowrap;
@@ -31,17 +31,25 @@ body {
 
 /* HERO */
 .hero {
-  background: url('../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg') center/cover no-repeat;
+  background: url("../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg")
+    center/cover no-repeat;
   position: relative;
   height: 650px;
   display: flex;
   align-items: center;
 }
 
+#hero-stand {
+  background: url("../media/stands/hero.jpeg") center/cover no-repeat;
+}
+
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -49,10 +57,6 @@ body {
 .hero .container {
   position: relative;
   z-index: 2;
-}
-
-.hero-content {
-  text-align: end;
 }
 
 .hero-content h2 {
@@ -82,7 +86,7 @@ body {
 /* SECCIÓN ¿QUÉ ES NUESTRA FERIA? */
 .seccion-titulo {
   font-weight: 600;
-  font-size: 3.0rem;
+  font-size: 3rem;
 }
 
 .lead {
@@ -124,6 +128,11 @@ footer {
   padding: 0.5rem;
 }
 
+#themeToggle {
+  margin-left: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
 .navbar-toggler-icon {
   width: 30px;
   height: 30px;
@@ -141,6 +150,9 @@ footer {
     padding-left: 0;
     text-align: right;
     font-size: 1.2rem;
+  }
+  #themeToggle {
+    margin-right: 2.3rem;
   }
 }
 
@@ -177,8 +189,10 @@ footer {
     font-size: 1.4rem;
   }
 
-
-  .lead, p, span, strong {
+  .lead,
+  p,
+  span,
+  strong {
     font-size: 1rem;
   }
 
@@ -205,4 +219,66 @@ footer {
     display: block;
     width: 100%;
   }
+}
+
+/* Secciones de Stands */
+.seccion-titulo {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.stand-box {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.bg-stand-azul {
+  background-color: #80d3e3;
+}
+
+.bg-stand-verde {
+  background-color: #97d8a3;
+}
+
+.stand-box img {
+  max-height: 240px;
+  object-fit: cover;
+}
+
+/* Estilo general de sección */
+.seccion-stands {
+  background-color: #f8f9fa; /* muy sutil para destacar las tarjetas */
+}
+
+
+/* Tema oscuro con Bootstrap 5.3 */
+html[data-bs-theme="dark"] body {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+html[data-bs-theme="dark"] .bg-white {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+html[data-bs-theme="dark"] .bg-fechas {
+  background-color: #2a2a2a !important;
+  color: #f1f1f1;
+}
+
+html[data-bs-theme="dark"] h1,
+html[data-bs-theme="dark"] h2,
+html[data-bs-theme="dark"] h3,
+html[data-bs-theme="dark"] h4,
+html[data-bs-theme="dark"] p,
+html[data-bs-theme="dark"] span,
+html[data-bs-theme="dark"] strong,
+html[data-bs-theme="dark"] .lead {
+  color: #ffffff !important;
+}
+
+html[data-bs-theme="dark"] footer {
+  background-color: #000 !important;
+  color: #ccc;
 }
