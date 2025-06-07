@@ -31,7 +31,7 @@ body {
 
 /* HERO */
 .hero {
-  background: url("../media/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg")
+  background: url("../media/inicio/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg")
     center/cover no-repeat;
   position: relative;
   height: 650px;
@@ -39,8 +39,21 @@ body {
   align-items: center;
 }
 
-#hero-stand {
+#hero-stand{
   background: url("../media/stands/hero.jpeg") center/cover no-repeat;
+}
+#hero-actividades{
+  background: url("../media/actividades/img\ actividades.jpg") center/cover no-repeat;
+}
+
+#hero-accesibilidad{
+  background: url("../media/accesibilidad/img\ acce.jpg") center/cover no-repeat;
+}
+#hero-promociones{
+  background: url("../media/promociones/wp12163057.webp") center/cover no-repeat;
+}
+#hero-contacto{
+  background: url("../media/contacto/plant-aesthetic-desktop-bdpqf0ham8zfgkc1.jpg") center/cover no-repeat;
 }
 
 .hero::before {
@@ -172,6 +185,16 @@ footer {
     margin-top: 50px;
   }
 
+  .hero-content2 h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .hero-content2 p {
+    line-height: 1.0;
+  }
+
   .btn-ver-stands {
     font-size: 0.9rem;
     padding: 10px 20px;
@@ -249,7 +272,6 @@ footer {
 .seccion-stands {
   background-color: #f8f9fa; /* muy sutil para destacar las tarjetas */
 }
-
 
 /* Tema oscuro con Bootstrap 5.3 */
 html[data-bs-theme="dark"] body {

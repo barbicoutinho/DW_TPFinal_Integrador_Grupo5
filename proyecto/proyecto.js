@@ -33,3 +33,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+(() => {
+  'use strict';
+
+  const forms = document.querySelectorAll('.needs-validation');
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity()) {
+        Swal.fire({
+          title: 'Mensaje enviado ✅',
+          text: 'Gracias por contactarte con Alma Verde.',
+          icon: 'success',
+          confirmButtonText: 'Cerrar'
+        });
+
+        form.reset();
+        form.classList.remove('was-validated');
+      } else {
+        form.classList.add('was-validated');
+      }
+    }, false);
+  });
+
+  console.log("Form ok");
+})();
