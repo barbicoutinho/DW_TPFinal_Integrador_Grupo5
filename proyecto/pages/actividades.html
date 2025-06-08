@@ -52,43 +52,23 @@
     </section>
 
     <section class="container my-5">
-        <div id="carouselActividades" class="carousel slide carousel-fade" data-bs-ride="carousel"
-            data-bs-interval="2000">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="carousel-peek-wrapper">
-                        <img src="../../media/actividades/carrusel-1.webp" class="carousel-peek-img" alt="Huerta">
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-peek-wrapper">
-                        <img src="../../media/actividades/carrusel-2.webp" class="carousel-peek-img"
-                            alt="Economía Circular">
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-peek-wrapper">
-                        <img src="../../media/actividades/carrusel-3.webp" class="carousel-peek-img"
-                            alt="Paneles Solares">
-                    </div>
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselActividades"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselActividades"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+        <!-- Carousel -->
+        <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+        <div class="carousel" data-flickity='{
+            "cellAlign": "center",
+            "contain": true,
+            "pageDots": false,
+            "prevNextButtons": true,
+            "wrapAround": true,
+            "autoPlay": true
+        }'>
+            <div class="carousel-cell"><img src="../../media/actividades/carrusel-1.webp" alt="Energia Renovable"></div>
+            <div class="carousel-cell"><img src="../../media/actividades/carrusel-2.webp" alt="Reciclaje Creativo"></div>
+            <div class="carousel-cell"><img src="../../media/actividades/carrusel-3.webp" alt="Huerta Urbana"></div>
         </div>
+
+        <!-- Flickity JS -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </section>
 
 
