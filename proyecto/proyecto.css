@@ -24,8 +24,8 @@ body {
 /* NAVBAR efecto vidrio */
 .glass-navbar {
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -34,37 +34,21 @@ img.svg-white {
   margin-right: 1rem;
 }
 
-/*****************************************/
-.carousel-peek-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 0 8%;
+/******************* ESTILOS DEL CAROUSEL *******************/
+
+.carousel-cell {
+  height: 30rem;
 }
 
-.carousel-peek-img {
-  width: 100%;
-  max-width: 84%;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+.carousel-cell img {
+  height: inherit;
 }
 
-@media (max-width: 768px) {
-  .carousel-peek-wrapper {
-    padding: 0;
-  }
-
-  .carousel-peek-img {
-    max-width: 100%;
-  }
-}
-
-/***************************************/
+/***************FIN DE ESTILOS DEL CAROUSEL ***************/
 
 /* HERO */
 .hero {
-  background: url("../media/inicio/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg")
-    center/cover no-repeat;
+  background: url("../media/inicio/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg") center/cover no-repeat;
   position: relative;
   height: 650px;
   display: flex;
@@ -74,20 +58,21 @@ img.svg-white {
 #hero-stand {
   background: url("../media/stands/hero.jpeg") center/cover no-repeat;
 }
+
 #hero-actividades {
-  background: url("../media/actividades/img\ actividades.jpg") center/cover
-    no-repeat;
+  background: url("../media/actividades/img\ actividades.jpg") center/cover no-repeat;
 }
 
 #hero-accesibilidad {
   background: url("../media/accesibilidad/img\ acce.jpg") center/cover no-repeat;
 }
+
 #hero-promociones {
   background: url("../media/promociones/wp12163057.webp") center/cover no-repeat;
 }
+
 #hero-contacto {
-  background: url("../media/contacto/plant-aesthetic-desktop-bdpqf0ham8zfgkc1.jpg")
-    center/cover no-repeat;
+  background: url("../media/contacto/plant-aesthetic-desktop-bdpqf0ham8zfgkc1.jpg") center/cover no-repeat;
 }
 
 .hero::before {
@@ -198,6 +183,7 @@ footer {
     text-align: right;
     font-size: 1.2rem;
   }
+
   #themeToggle {
     margin-right: 2.3rem;
   }
@@ -304,7 +290,8 @@ footer {
 
 /* Estilo general de sección */
 .seccion-stands {
-  background-color: #f8f9fa; /* muy sutil para destacar las tarjetas */
+  background-color: #f8f9fa;
+  /* muy sutil para destacar las tarjetas */
 }
 
 /* Tema oscuro con Bootstrap 5.3 */
