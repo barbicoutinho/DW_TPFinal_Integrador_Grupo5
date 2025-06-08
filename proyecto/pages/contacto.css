@@ -1,3 +1,55 @@
 #boton-contacto {
     margin-bottom: 2rem;
 }
+#preguntas-frecuentes {
+  background-color: #d9e7c9;
+}
+
+.bloque-preguntas {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+.bloque-preguntas p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.bloque-preguntas h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.accordion-button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #f5fbe6;
+  color: #2d4c1e;
+  border: none;
+  transition: background 0.2s;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #cbe6a3;
+  color: #1b2e13;
+}
+
+.accordion-body {
+  font-size: 1.2rem;
+  background-color: #f8fff2;
+  color: #2d4c1e;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #cbe6a3;
+  overflow: hidden;
+}
+
+.accordion-item {
+  box-shadow: 0 2px 8px rgba(45, 76, 30, 0.07);
+}
