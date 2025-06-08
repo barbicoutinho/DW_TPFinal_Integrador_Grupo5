@@ -34,18 +34,6 @@ img.svg-white {
   margin-right: 1rem;
 }
 
-/******************* ESTILOS DEL CAROUSEL *******************/
-
-.carousel-cell {
-  height: 30rem;
-}
-
-.carousel-cell img {
-  height: inherit;
-}
-
-/***************FIN DE ESTILOS DEL CAROUSEL ***************/
-
 /* HERO */
 .hero {
   background: url("../media/inicio/bunch-of-leaves-plant-4k-background-fdl0xfepzk0ww113.jpg") center/cover no-repeat;
@@ -324,4 +312,12 @@ html[data-bs-theme="dark"] .lead {
 html[data-bs-theme="dark"] footer {
   background-color: #000 !important;
   color: #ccc;
+}
+
+.cambiar-color {
+    background-color: #D9E7C9;
+}
+
+[data-bs-theme="dark"] section.cambiar-color {
+  background-color: #283024 !important; /* verde oscuro */
 }

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const flickityImages = document.querySelectorAll('.carousel-cell img');
 
-    const targets = ['#paneles','#huerta', '#economia', '#infantil'];
+    const targets = ['#paneles','#economia','#huerta', '#infantil'];
 
     flickityImages.forEach((img, index) => {
       img.style.cursor = 'pointer';
