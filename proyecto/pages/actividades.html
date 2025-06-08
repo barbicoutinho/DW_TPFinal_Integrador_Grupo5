@@ -52,32 +52,70 @@
     </section>
 
     <section class="container my-5">
-        <div id="carouselActividades" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselActividades" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="2000">
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img src="../../media/actividades/1.webp" class="d-block w-100 rounded shadow-sm" alt="Actividad 1">
+                    <div class="carousel-peek-wrapper">
+                        <img src="../../media/actividades/carrusel-1.webp" class="carousel-peek-img" alt="Huerta">
+                    </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="../../media/actividades/2.webp" class="d-block w-100 rounded shadow-sm" alt="Actividad 2">
+                    <div class="carousel-peek-wrapper">
+                        <img src="../../media/actividades/carrusel-2.webp" class="carousel-peek-img"
+                            alt="Economía Circular">
+                    </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="../../media/actividades/3.webp" class="d-block w-100 rounded shadow-sm" alt="Actividad 3">
+                    <div class="carousel-peek-wrapper">
+                        <img src="../../media/actividades/carrusel-3.webp" class="carousel-peek-img"
+                            alt="Paneles Solares">
+                    </div>
                 </div>
 
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselActividades"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselActividades"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </section>
+
+
+    <section id="huerta" class="py-5 px-4" style="background-color: #d9e7c9;">
+        <h3 class="fw-semibold text-center mb-3">Taller de Huerta Orgánica</h3>
+        <p class="text-center fs-5">
+            Aprendé sobre sembrado, trasplante, compost y cuidado de plagas. Ideal para principiantes.
+        </p>
+    </section>
+
+    <section id="economia" class="py-5 px-4 bg-white">
+        <h3 class="fw-semibold text-center mb-3">Charla de Economía Circular</h3>
+        <p class="text-center fs-5">
+            Consejos prácticos para reducir residuos y consumir de forma más consciente en casa.
+        </p>
+    </section>
+
+    <section id="infantil" class="py-5 px-4" style="background-color: #d9e7c9;">
+        <h3 class="fw-semibold text-center mb-3">Actividad Infantil: Semilleritos Sustentables</h3>
+        <p class="text-center fs-5">
+            Niños de 6 a 12 años juegan, siembran y aprenden a cuidar el planeta con sus propias manos.
+        </p>
+    </section>
+
+
+
+
 
     <footer class="text-center text-white bg-dark footer-custom">
         <p class="mb-0">© 2025 Alma Verde, Todos los derechos reservados.</p>
