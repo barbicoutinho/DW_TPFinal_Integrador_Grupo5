@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   font-family: "Montserrat", sans-serif; /* Fuente Montserrat global */
-  font-size: 1 rem;
+  font-size: 1rem;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -210,4 +210,24 @@ html[data-bs-theme="dark"] span,
 html[data-bs-theme="dark"] strong,
 html[data-bs-theme="dark"] .lead {
   color: #ffffff !important;
+}
+
+/* Logo preliminar: tipografía cursiva + ícono */
+.logo-preliminar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+}
+
+/* Logo final: tipografía sans-serif, más formal */
+.logo-final {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Ligero, podés ajustar a 300 o 500 si hace falta */
+  font-size: 2.5rem;
+  color: #000;
 }
