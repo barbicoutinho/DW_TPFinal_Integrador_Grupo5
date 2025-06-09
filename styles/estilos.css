@@ -1,5 +1,4 @@
 * {
-  /* Reinicio general: elimina márgenes y paddings por defecto, y ajusta el modelo de caja */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,22 +6,19 @@
 
 html,
 body {
-  /* Asegura que ocupen el 100% de la altura de la ventana */
   height: 100%;
 }
 
 body {
-  /* Fuente por defecto */
   font-family: sans-serif;
   display: flex;
-  flex-direction: column; /* Estructura vertical para usar el footer abajo */
+  flex-direction: column;
 }
 
 main {
-  flex: auto; /* El main ocupa todo el espacio disponible entre header y footer */
+  flex: auto;
 }
 
-/* Tamaños de fuente para distintos encabezados */
 h1 {
   font-size: 3.5em;
 }
@@ -37,66 +33,20 @@ p {
 }
 
 ul {
-  list-style: none; /* Elimina los puntos de las listas */
+  list-style: none;
 }
 
 a {
-  text-decoration: none !important; /* Quita el subrayado de los links */
+  text-decoration: none !important;
 }
 
 .icon {
-  /* Estilo para iconos */
   width: 1.5em;
   height: 1.5em;
   margin-right: 0.5em;
 }
 
-
-/* --- INTEGRANTES - estilo de tarjetas --- */
-.integrante-card {
-  background-color: #f4f4f4;
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.integrante-card:hover {
-  transform: translateY(-5px);
-}
-
-.integrante-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.integrante-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.integrante-card p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .integrante-card {
-    max-width: 90%;
-  }
-
-  .integrante-card h3 {
-    font-size: 1.4rem;
-  }
-
-  .integrante-card p {
-    font-size: 1rem;
-  }
+/* Agregada para fondo de sección de integrantes */
+.bg-fechas {
+  background-color: #eafaf1;
 }
