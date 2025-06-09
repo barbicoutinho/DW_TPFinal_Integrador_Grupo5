@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   font-family: "Montserrat", sans-serif; /* Fuente Montserrat global */
-  font-size: 2.05rem;
+  font-size: 1 rem;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
