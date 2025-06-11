@@ -55,8 +55,8 @@ img.svg-white {
   background: url("../media/accesibilidad/img\ acce.jpg") center/cover no-repeat;
 }
 
-#hero-promociones {
-  background: url("../media/promociones/wp12163057.webp") center/cover no-repeat;
+#hero-pagos {
+  background: url("../media/pagos/wp12163057.webp") center/cover no-repeat;
 }
 
 #hero-contacto {
@@ -318,6 +318,6 @@ html[data-bs-theme="dark"] footer {
     background-color: #D9E7C9;
 }
 
-[data-bs-theme="dark"] section.cambiar-color {
+[data-bs-theme="dark"] .cambiar-color {
   background-color: #283024 !important; /* verde oscuro */
 }
