@@ -1,108 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alma Verde</title>
-    <link rel="icon" type="image/png" href="./media/icono.svg">
-    <link rel="stylesheet" href="../styles/estilos.css">
-    <link rel="stylesheet" href="../styles/nav.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alma Verde</title>
+  <link rel="icon" type="image/png" href="../media/icono.svg">
+  <link rel="stylesheet" href="../styles/estilos.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="../styles/index.js"></script>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl bg-light container-fluid">
-        <!-- Contenedor de logo y botón menú hamburguesa -->
-        <header class="mi-logo">
-            <a href="./index.html">
-                <img src="./media/icono.svg" alt="alma verde" class="alma-verde-icon">
-                <span>
-                    Alma Verde
-                </span>
-            </a>
-        </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl glass-navbar fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a href="../index.html" class="navbar-brand d-flex align-items-center">
+        <img src="../media/new logo.svg" class="svg-white" alt="Alma Verde" width="50" />
+        <span>Alma Verde</span>
+      </a>
 
-        <!-- Botón hamburguesa que aparece en pantallas chicas -->
-        <div class="mi-hamburguesa">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="avances.html">Avances</a></li>
+          <li class="nav-item"><a class="nav-link" href="../proyecto/proyecto.html" target="_blank">Proyecto</a></li>
+        </ul>
+        <div id="themeToggle">
+          <img id="icon-luna" src="../media/luna color.svg" class="icon" alt="Modo oscuro">
+          <img id="icon-sol" src="../media/sol brillante.svg" class="icon" alt="Modo claro" style="display: none;">
         </div>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Menú de navegación que se oculta en pantallas chicas y se despliega -->
-        <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
-            <a class="nav-link" href="../index.html">Home</a>
-            <a class="nav-link" href="./avances.html">Avances</a>
-            <a class="nav-link" href="../proyecto/proyecto.html" target="_blank">Proyecto</a>
-        </div>
-    </nav>
-    <main>
-        <section>
-            <h1>Texto introductorio</h1>
-            <h3>Actividad principal de la organización.</h3>
-            <p>Alma Verde es una organización sin fines de lucro dedicada a la conservación del medio ambiente y la
-                promoción de prácticas sostenibles. Nuestro objetivo es educar y empoderar a las comunidades para que
-                adopten estilos de vida más ecológicos.</p>
-            <h3>Objetivos del sitio web.</h3>
-            <p>El sitio web de Alma Verde tiene como objetivo principal informar y educar al público sobre la
-                importancia de la conservación del medio ambiente, así como promover nuestras actividades y proyectos.
-                También buscamos crear una comunidad en línea donde los usuarios puedan compartir sus experiencias y
-                aprender unos de otros.</p>
-            <h3>Concepto general y estrategias de atracción.</h3>
-            <p>El concepto general del sitio web es ser un recurso accesible y atractivo para cualquier persona
-                interesada en la conservación del medio ambiente. Utilizaremos estrategias de SEO, marketing en redes
-                sociales y contenido atractivo para atraer a nuestro público objetivo.</p>
-            <h3>Análisis del público objetivo (edad, intereses, hábitos, etc.).</h3>
-            <p>Nuestro público objetivo son personas de todas las edades interesadas en la conservación del medio
-                ambiente. Esto incluye estudiantes, educadores, familias y profesionales del medio ambiente. Nuestros
-                usuarios suelen estar interesados en aprender sobre prácticas sostenibles y participar en actividades
-                relacionadas con la conservación.</p>
-        </section>
-        <section>
-            <h1>Identidad visual inicial</h1>
-            <h3>Paleta de colores, tipografía, íconos, estilo gráfico.</h3>
-            <ul>
-                <li>Colores: <b class="verde">Verde (#4CAF50)</b>, <b class="beige">beige (#F5F5DC)</b>, <b
-                        class="blanco">blanco (#FFFFFF)</b>, acentos en marrón claro o celeste.</li>
-                <li>Tipografía: Arial, sans-serif. - Tipografía Logo: Pacifico, cursive.</li>
-                <li>Íconos: <img src="../media/github.svg" alt="Icono de Github" class="icon"></li>
-            </ul>
-            <h3>Logo (aunque sea en versión preliminar).</h3>
-            <div class="mi-logo">
-                <a href="../index.html">
-                    <img src="../media/icono.svg" alt="alma verde" class="alma-verde-icon">
-                    <span>
-                        Alma Verde
-                    </span>
-                </a>
-            </div>
-        </section>
-        <section>
-            <h1>Mapa del sitio</h1>
-            <a href="https://www.canva.com/design/DAGofiu86H0/-XUAvy6T0_f0Enva-2pxIA/edit" target="_blank" rel="noopener">
-                <img src="../media/mapa-del-sitio.png" alt="Mapa del sitio">
-            </a>
-        </section>
-        <section>
-            <h1>Prototipo</h1>
-            <h3><a href="https://www.figma.com/design/WqUAOdw4WB7jzcslTjdyfq/Alma-Verde?node-id=0-1&p=f&t=uxhB6O7Alut81nvU-0">Ver prototipo en Figma</a></h3>
-        </section>
-        <section>
-            <h1>Organización del equipo</h1>
-            <h3>Roles asumidos por cada integrante (Diseñador UX/UI, Maquetador,
-                Programador, Comunicador Web).</h3>
-            <h3>Breve descripción de tareas realizadas por cada uno.</h3>
-        </section>
+  <!-- Main -->
+  <main class="bg-fechas">
+    <section class="container py-5">
+      <h1 class="seccion-titulo">Texto introductorio</h1>
+      <h3>Actividad principal de la organización.</h3>
+      <p>Alma Verde es una organización sin fines de lucro dedicada a la conservación del medio ambiente y la
+        promoción de prácticas sostenibles...</p>
 
+      <h3>Objetivos del sitio web.</h3>
+      <p>El sitio web de Alma Verde tiene como objetivo principal informar y educar...</p>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 Alma Verde. Todos los derechos reservados.</p>
-    </footer>
+      <h3>Concepto general y estrategias de atracción.</h3>
+      <p>El concepto general del sitio web es ser un recurso accesible y atractivo...</p>
+
+      <h3>Análisis del público objetivo.</h3>
+      <p>Nuestro público objetivo son personas de todas las edades interesadas en la conservación del medio ambiente...</p>
+    </section>
+
+    <section class="container py-5">
+      <h1 class="seccion-titulo">Identidad visual inicial</h1>
+      <h3>Paleta de colores, tipografía, íconos, estilo gráfico.</h3>
+      <ul class="list-unstyled">
+        <li>Colores: <b class="verde">Verde (#4CAF50)</b>, <b class="beige">beige (#F5F5DC)</b>, <b class="blanco">blanco (#FFFFFF)</b>, acentos en marrón claro o celeste.</li>
+        <li>Tipografía: 'Montserrat', sans-serif. - Logo: 'Montserrat', sans-serif.</li>
+        <li>Íconos: <img src="../media/github.svg" alt="Icono de Github" class="icon"></li>
+      </ul>
+
+<h3>Logo preliminar:</h3>
+<div class="logo-preliminar">
+  <img src="../media/icono.svg" alt="Alma Verde logo" width="60">
+  <span>Alma Verde</span>
+</div>
+
+<h3>Logo final:</h3>
+<div class="logo-final">
+  <img src="../media/new logo.svg" alt="Logo final Alma Verde" width="50">
+  <span>Alma Verde</span>
+</div>
+
+    </section>
+
+    <section class="container py-5">
+      <h1 class="seccion-titulo">Mapa del sitio</h1>
+      <a href="https://www.canva.com/design/DAGofiu86H0/-XUAvy6T0_f0Enva-2pxIA/edit" target="_blank" rel="noopener">
+        <img src="../media/mapa-del-sitio.png" alt="Mapa del sitio" class="img-fluid">
+      </a>
+    </section>
+
+    <section class="container py-5">
+      <h1 class="seccion-titulo">Prototipo</h1>
+      <h3><a href="https://www.figma.com/design/WqUAOdw4WB7jzcslTjdyfq/Alma-Verde?node-id=0-1&p=f&t=uxhB6O7Alut81nvU-0" target="_blank">Ver prototipo en Figma</a></h3>
+    </section>
+
+    <section class="container py-5">
+      <h1 class="seccion-titulo">Organización del equipo</h1>
+      <h3>Roles asumidos por cada integrante (Diseñador UX/UI, Maquetador, Programador, Comunicador Web).</h3>
+      <h3>Breve descripción de tareas realizadas por cada uno.</h3>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <p>&copy; 2025 Alma Verde. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
