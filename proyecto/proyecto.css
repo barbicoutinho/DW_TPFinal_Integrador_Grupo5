@@ -276,12 +276,6 @@ footer {
   object-fit: cover;
 }
 
-/* Estilo general de sección */
-.seccion-stands {
-  background-color: #f8f9fa;
-  /* muy sutil para destacar las tarjetas */
-}
-
 /* Tema oscuro con Bootstrap 5.3 */
 html[data-bs-theme="dark"] body {
   background-color: #121212;
@@ -320,4 +314,8 @@ html[data-bs-theme="dark"] footer {
 
 [data-bs-theme="dark"] .cambiar-color {
   background-color: #283024 !important; /* verde oscuro */
+}
+
+[data-bs-theme="dark"] .cambiar-color2 {
+  background-color: #192414 !important; /* verde oscuro */
 }
