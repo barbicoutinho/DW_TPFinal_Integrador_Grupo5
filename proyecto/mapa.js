@@ -136,7 +136,7 @@ $(document).ready(function () {
       },
 
       onRegionOver: function (event, code, region) {
-        if (ferias[code] && selectedRegion !== code) {
+        if (ferias[code] && selectedRegion == null) {
           resaltarTarjeta(code);
           mostrarFlecha(code);
           actualizarEventInfo(code, "hover");
@@ -172,23 +172,8 @@ $(document).ready(function () {
           codigoRegion = "c";
         }
 
-        // Alternar si es CABA/BA
-        if (codigoRegion === "ba" || codigoRegion === "c") {
-          cabaIndex =
-            codigoRegion === eventosCABA[cabaIndex]
-              ? cabaIndex === 0
-                ? 1
-                : 0
-              : codigoRegion === "ba"
-              ? 0
-              : 1;
-          selectedRegion = "c";
-          const eventoActual = eventosCABA[cabaIndex];
-          resaltarTarjeta(eventoActual);
-          mostrarFlecha(eventoActual);
-          actualizarEventInfo(eventoActual, "selected");
-          console.log("Tarjeta clickeada: " + ferias[eventoActual].descripcion);
-        } else if (codigoRegion && ferias[codigoRegion]) {
+        // CORRECCIÓN: No alternar entre ba/c al hacer click en la tarjeta
+        if (codigoRegion && ferias[codigoRegion]) {
           selectedRegion = codigoRegion;
           resaltarTarjeta(codigoRegion);
           mostrarFlecha(codigoRegion);
