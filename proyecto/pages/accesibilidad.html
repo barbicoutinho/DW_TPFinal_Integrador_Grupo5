@@ -187,18 +187,19 @@
         <div class="map-section">
           <div id="mapa">
             <div class="map-event-info" id="map-event-info">
+              <button
+                id="reset-selection"
+                class="btn-reset-selection"
+                title="Cerrar panel de evento"
+                style="display: none"
+              >
+                ×
+              </button>
               <h4>Próximos Eventos</h4>
               <p>
                 Haz clic en las provincias destacadas en verde o en las tarjetas
                 para ver los detalles
               </p>
-              <button
-                id="reset-selection"
-                class="btn btn-sm btn-outline-light mt-2"
-                style="display: none"
-              >
-                Ver todos los eventos
-              </button>
             </div>
 
             <!-- TODO: arreglar las flechas indicadoras -->
@@ -206,10 +207,10 @@
               <div class="arrow">→</div>
             </div>
             <div class="arrow-indicator" id="arrow-ba">
-              <div class="arrow">→</div>
+              <div class="arrow">↑</div>
             </div>
             <div class="arrow-indicator" id="arrow-c">
-              <div class="arrow">→</div>
+              <div class="arrow">←</div>
             </div>
           </div>
         </div>
@@ -220,7 +221,7 @@
               <div class="event-icon">🗓️</div>
               <h5>Córdoba</h5>
               <p><strong>23 de noviembre</strong></p>
-              <small>Centro de Convenciones</small>
+              <small>Centro Cultural Córdoba</small>
               <div class="event-status">
                 <span class="badge bg-success">Próximamente</span>
               </div>
