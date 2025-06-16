@@ -18,16 +18,6 @@ html, body {
   padding: 0;
 }
 
-/* Para que el main ocupe el espacio restante */
-main {
-  flex: 1 0 auto;
-  padding-top: 80px; /* espacio para navbar fijo */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #eef7df;
-}
 
 /* NAVBAR */
 .navbar-brand span {
@@ -59,6 +49,7 @@ main {
 #themeToggle {
   margin-left: 1.4rem;
   margin-bottom: 0.7rem;
+  cursor: pointer;
 }
 
 /* NAVBAR vidrio */
@@ -208,7 +199,7 @@ html[data-bs-theme="dark"] p,
 html[data-bs-theme="dark"] span,
 html[data-bs-theme="dark"] strong,
 html[data-bs-theme="dark"] .lead {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* Logo preliminar: tipografía cursiva + ícono */
@@ -229,4 +220,42 @@ html[data-bs-theme="dark"] .lead {
   font-weight: 400; /* Ligero, podés ajustar a 300 o 500 si hace falta */
   font-size: 2.5rem;
   color: #000;
+}
+
+:root {
+  --bg-color: #eef7df;
+  --text-color: #000;
+}
+
+html[data-bs-theme="dark"] {
+  --bg-color: #2a2a2a;
+  --text-color: #f1f1f1;
+}
+
+.bg-fechas {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.proyecto-cuadro {
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+html[data-bs-theme="dark"] .proyecto-cuadro {
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.proyecto-titulo {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+html[data-bs-theme="dark"] .proyecto-titulo {
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.15);
 }
