@@ -19,11 +19,12 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-black glass-navbar fixed-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
         <img src="../media/new logo.svg" class="svg-white" alt="Alma Verde" width="50" />
         <span>Alma Verde</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Abrir menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -31,15 +32,32 @@
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./avances.html">Avances</a></li>
           <li class="nav-item"><a class="nav-link" href="./infoProyecto.html">Proyecto</a></li>
-          <li class="nav-item"><a class="nav-link" href="../proyecto/proyecto.html" target="_blank">Sitio del proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="../proyecto/proyecto.html" target="_blank">Sitio del
+              proyecto</a></li>
         </ul>
         <div id="themeToggle">
           <img id="icon-luna" src="../media/luna color.png" alt="Modo oscuro" width="35" height="35" />
-          <img id="icon-sol" src="../media/sol brillante.png" alt="Modo claro" width="35" height="35" style="display: none;" />
+          <img id="icon-sol" src="../media/sol brillante.png" alt="Modo claro" width="35" height="35"
+            style="display: none;" />
         </div>
       </div>
     </div>
   </nav>
+
+  <section class="py-5 d-flex justify-content-center bg-fechas mt-5" style="min-height: 80vh;">
+    <div class="proyecto-cuadro p-4 rounded shadow-sm" style="max-width: 700px; background-color: var(--bg-color);">
+      <h1 class="text-center mb-4 proyecto-titulo">
+        Alma Verde - Feria sustentable
+      </h1>
+      <p class="text-center mb-3 fw-semibold"><a href="../proyecto/proyecto.html">Link del proyecto</a></p>
+      <div class="ratio ratio-16x9 rounded" style="overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        <iframe src="https://www.youtube.com/embed/b0GS5dy8VKc" title="ALMA VERDE - Feria sustentable" allowfullscreen
+          style="border-radius: 10px;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="footer-custom">
