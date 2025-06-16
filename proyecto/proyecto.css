@@ -6,7 +6,8 @@ body {
   line-height: 1.6;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -39,7 +40,8 @@ nav.navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-img.svg-white, .logo-uade-footer{
+img.svg-white,
+.logo-uade-footer {
   filter: brightness(0) invert(1);
   margin-right: 1rem;
 }
@@ -121,7 +123,6 @@ img.svg-white, .logo-uade-footer{
 
 /* SECCIÓN ¿QUÉ ES NUESTRA FERIA? */
 .seccion-titulo {
-  font-weight: 600;
   font-size: 3rem;
 }
 
@@ -439,8 +440,8 @@ html[data-bs-theme="dark"] footer {
   left: 37%;
 }
 #arrow-ba {
-  top: 50%;
-  left: 56%;
+  top: 31%;
+  left: 67%;
 }
 #arrow-c {
   top: 41%;
