@@ -3,7 +3,7 @@ $(document).ready(function () {
     co: {
       nombre: "Córdoba",
       fecha: "23 de noviembre",
-      lugar: "Centro de Convenciones",
+      lugar: "Centro Cultural Córdoba",
       descripcion: "Feria en Córdoba – 23 de noviembre",
     },
     ba: {
@@ -21,6 +21,10 @@ $(document).ready(function () {
   };
 
   let selectedRegion = null;
+
+  // Alternancia para eventos en la misma provincia (Buenos Aires/CABA)
+  const eventosCABA = ["ba", "c"];
+  let cabaIndex = 0;
 
   function mostrarEventInfo(visible = true) {
     if (visible) {
@@ -65,7 +69,7 @@ $(document).ready(function () {
     if (ferias[codigo]) {
       const info = ferias[codigo];
       if (tipo === "selected") {
-        $("#map-event-info h4").text(`Evento Seleccionado: ${info.nombre}`);
+        $("#map-event-info h4").text(`Evento: ${info.nombre}`);
         $("#map-event-info p").html(`
           <strong>${info.fecha}</strong><br>
           ${info.lugar}<br>
@@ -74,7 +78,7 @@ $(document).ready(function () {
         $("#reset-selection").show();
       } else if (tipo === "hover") {
         if (!selectedRegion) {
-          $("#map-event-info h4").text(`Vista previa: ${info.nombre}`);
+          $("#map-event-info h4").text(`${info.nombre}`);
           $("#map-event-info p").html(`
             <strong>${info.fecha}</strong><br>
             ${info.lugar}<br>
@@ -111,7 +115,18 @@ $(document).ready(function () {
       selectedRegions: ["AR-X", "AR-B", "AR-C"],
 
       onRegionClick: function (event, code, region) {
-        if (ferias[code]) {
+        // Si es la provincia de Buenos Aires/CABA (AR-C)
+        if (code === "ba") {
+          cabaIndex = selectedRegion === "ba" && cabaIndex === 0 ? 1 : 0;
+          selectedRegion = "ba";
+          const eventoActual = eventosCABA[cabaIndex];
+          resaltarTarjeta(eventoActual);
+          mostrarFlecha(eventoActual);
+          actualizarEventInfo(eventoActual, "selected");
+          console.log(
+            "Feria en " + region + ": " + ferias[eventoActual].descripcion
+          );
+        } else if (ferias[code]) {
           selectedRegion = code;
           resaltarTarjeta(code);
           mostrarFlecha(code);
@@ -157,15 +172,28 @@ $(document).ready(function () {
           codigoRegion = "c";
         }
 
-        if (codigoRegion && ferias[codigoRegion]) {
+        // Alternar si es CABA/BA
+        if (codigoRegion === "ba" || codigoRegion === "c") {
+          cabaIndex =
+            codigoRegion === eventosCABA[cabaIndex]
+              ? cabaIndex === 0
+                ? 1
+                : 0
+              : codigoRegion === "ba"
+              ? 0
+              : 1;
+          selectedRegion = "c";
+          const eventoActual = eventosCABA[cabaIndex];
+          resaltarTarjeta(eventoActual);
+          mostrarFlecha(eventoActual);
+          actualizarEventInfo(eventoActual, "selected");
+          console.log("Tarjeta clickeada: " + ferias[eventoActual].descripcion);
+        } else if (codigoRegion && ferias[codigoRegion]) {
           selectedRegion = codigoRegion;
           resaltarTarjeta(codigoRegion);
           mostrarFlecha(codigoRegion);
           actualizarEventInfo(codigoRegion, "selected");
-
-          // Actualizo
-          const info = ferias[codigoRegion];
-          console.log("Tarjeta clickeada: " + info.descripcion);
+          console.log("Tarjeta clickeada: " + ferias[codigoRegion].descripcion);
         }
       });
 
