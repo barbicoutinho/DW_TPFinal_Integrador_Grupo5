@@ -151,6 +151,7 @@ footer {
 #themeToggle {
   margin-left: 1.4rem;
   margin-bottom: 0.7rem;
+  cursor: pointer;
 }
 
 .navbar-toggler-icon {
