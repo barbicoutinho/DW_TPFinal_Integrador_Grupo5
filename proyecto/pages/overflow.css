@@ -1,0 +1,9 @@
+html, body {
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
